@@ -1,1 +1,40 @@
 @import "_variables.scss";
+
+.user-gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-gallery-header{
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  @include tablet{
+    font-size: 3rem;
+  }
+  @include laptop{
+    font-size: 4rem;
+  }
+  @include desktop{
+    font-size: 5rem;
+  }
+}
+
+.user-gallery-gallery{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  @include laptop{
+    height: 60%;
+    width: 90%;
+    flex-direction: row;
+  }
+  @include desktop{
+    width: 90%;
+    padding: 1rem;
+  }
+}
